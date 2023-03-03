@@ -2,9 +2,7 @@ const mongoose = require("mongoose");
 const app = require("./app");
 
 // const { DB_HOST } = process.env;
-const DB_HOST =
-  "mongodb+srv://AND:pXxaXGDhNpxefyeA@cluster0.bkzm9g6.mongodb.net/contacts_phonebook?retryWrites=true&w=majority";
-
+const { DB_HOST } = require("./config");
 // process.setMaxListeners(0);
 
 mongoose.set("strictQuery", true);
