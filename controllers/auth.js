@@ -5,7 +5,7 @@ const { User } = require("../models/user");
 
 const { HttpError, ctrlWrapper } = require("../helpers");
 
-const { SECRET_KEY } = process.env;
+// const { SECRET_KEY } = process.env;
 
 const register = async (req, res) => {
   const { email, password } = req.body;
